@@ -1,0 +1,77 @@
+/*int n = int.Parse(Console.ReadLine());
+for (int i = 1; i < n + 1; i++)
+{
+    for (int j = 1; j < n + 1; j++)
+    {
+        if (i + j == n / 2 + 2 || i + j == 3 * n / 2 + 1 || Math.Abs(i - j) == n / 2)
+            {
+            Console.Write("*");
+        }
+        else
+        {
+            Console.Write("#");
+        }
+    }
+    Console.WriteLine();
+}*/
+
+//Zad 1 - Medium - Oblicz sumę n pierwszych liczb trzycyfrowych
+
+
+/*int a = int.Parse(Console.ReadLine());
+int suma = 0;
+for (int n = 100; n < a + 100; n++)
+{
+    suma += n;
+}
+Console.WriteLine(suma);*/
+
+//Zad 2 - Light Hard - Napisz sumę k pocątkowych liczb fibonacciego
+/*int suma = 0;
+int a = 0;
+int b = 1;
+int k = int.Parse(Console.ReadLine());
+for ( int i = 0; i < k; i++)
+{
+    suma = b;
+    b = b + a;
+    a = suma;
+}
+Console.WriteLine(suma);*/
+
+//Zad 3 - Light Hard - Sprawdzenie czy liczba n jest doskonała czyli równa sumie swoich dzielników bez niej samej
+
+//6 = 1 + 2 + 3 Jest
+//10 = 1 + 2 + 5 Nie
+//497 Jest
+// 8128
+/*int x = int.Parse(Console.ReadLine());
+int suma = 0;
+for (int i = 1; i < x; i++)
+{
+    if(x % i == 0)
+    {
+        suma += i;
+    }
+}
+if (x == suma)
+{
+    Console.WriteLine("Jest Doskonała");
+}
+else
+{
+    Console.WriteLine("Nie jest");
+}*/
+
+//Zad 4 - Medium Znajdz sumę n wyrazów ciągu:
+
+/*int a = int.Parse(Console.ReadLine());
+int suma = 5;
+int temp = suma;
+
+for( int i = 0; i < a - 1; i++)
+{
+    temp = temp - (temp * 2);
+    temp = temp + (temp * 2);
+
+}*/
