@@ -62,3 +62,69 @@ namespace karta1
 		}
 	}
 }
+
+
+using System;
+
+namespace karta2
+{
+  class Produkt {
+    public string nazwa;
+    public double cena;
+    public string opis;
+    public void getnazwa() 
+    {
+      Console.WriteLine("NazwaWlasna");
+    }
+    public void getcena() 
+    {
+      Console.WriteLine("500");
+    }
+    public void getopis() 
+    {
+      Console.WriteLine("opisnull");
+    }
+    public void pprodukt(string nazwa, double cena, string opis)
+    {
+      Console.WriteLine("nain");
+    }
+  }
+
+  class Profil {
+    public string imie;
+    public string drugieImie;
+    public string nazwisko;
+    public void getimie()
+    {
+      Console.WriteLine("Mateusz");
+    }
+    public void getnazwisko()
+    {
+      Console.WriteLine("Piotrowski");
+    }
+  }
+
+  class Uzytkownik {
+    public string login;
+    public string haslo;
+    public Profil profil;
+    public void loguj()
+    {
+      Console.WriteLine("")
+    }
+  }
+
+  class Koszyk 
+  {
+    public int id;
+    public Produkt produkt;
+    public Uzytkownik uzytkownik;
+    public int getId()
+    {
+		return id;
+    }
+    public void operation() {
+      Console.WriteLine("operacja plastyczna");
+    }
+  }
+}
